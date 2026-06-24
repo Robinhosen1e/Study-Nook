@@ -21,7 +21,7 @@ const Navbar = () => {
      {/* {user?( */}
       <li className=" text-white  hover:text-[#65A662] mr-6 transition duration-500"><Link href="/profile">Add Rooms</Link></li>
       {/* ) : ("")} */}
-     <li className=" text-white hover:text-[#65A662] transition duration-500"><Link href="/about">My Listings</Link></li>
+     <li className=" text-white hover:text-[#65A662] mr-6 transition duration-500"><Link href="/about">My Listings</Link></li>
 
      <li className=" text-white hover:text-[#65A662] transition duration-500"><Link href="/about">My Bookings</Link></li>
     </>
@@ -30,12 +30,11 @@ const Navbar = () => {
         <section className="min-h-[100vh] relative">
 
           <Image
-            width={1920}
-  height={1080}
-  quality={100}
+           fill
+           priority
             alt="Tailwind CSS Navbar component"
             src={HeroImage} 
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-100 -z-10" />
+            className="object-cover" />
 
 
          <div className="absolute inset-0 bg-black/60">
@@ -134,33 +133,37 @@ const Navbar = () => {
     <path
       d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
   </svg>
-</label>
+                    </label>
                </div>
 
         {/* hero content */}
         
-        <div className="w-1/2 mx-auto">
-             <div className=" pt-32 text-white">
-          <h1 className="w-5xl text-4xl md:text-7xl font-bold ">
-            Find Your Perfect Study <br /> <span className="text-[#65A662] w-5xl mx-auto text-2xl md:text-6xl font-bold">Room With StudyNook</span>
-          </h1>
+        <div className="w-full md:w-1/2 mx-auto px-4">
+  <div className="pt-32 text-white">
+    <h1 className="text-4xl lg:text-6xl font-bold">
+      Find Your Perfect Study <br />
+      <span className="text-[#65A662] text-2xl lg:text-6xl font-bold text-center">
+        Room With StudyNook
+      </span>
+    </h1>
 
-          <p className="mt-6 max-w-xl text-[14px] text-gray-300">
-            Reserve quiet study rooms, manage bookings, and enjoy a seamless
-            learning experience with StudyNook.
-          </p>
+    <p className="mt-6 max-w-xl text-[14px] text-gray-300">
+      Reserve quiet study rooms, manage bookings, and enjoy a seamless
+      learning experience with StudyNook.
+    </p>
 
-          <div className="w-3xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <button className=" flex rounded-lg bg-[#65A662] hover:bg-[#3b7e37]  cursor-pointer px-6 py-3 font-medium mr-5">
-            Explore Rooms  <MoveRight className="ml-2" />
-          </button>
+    <div className="w-[250px] lg:w-[500px] mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <button className="flex rounded-lg bg-[#65A662] hover:bg-[#3b7e37] cursor-pointer px-6 py-3 font-medium mr-5">
+        Explore Rooms
+        <MoveRight className="ml-2" />
+      </button>
 
-          <button className=" rounded-lg border-[#65A662] border px-6 py-3 font-medium cursor-pointer text-[#65A662] hover:bg-[#65A662] hover:text-white transition duration-500">
-            Get Started
-          </button>
-          </div>
-        </div>
-        </div>
+      <button className="rounded-lg border-[#65A662] border px-6 py-3 font-medium cursor-pointer text-[#65A662] hover:bg-[#65A662] hover:text-white transition duration-500">
+        Get Started
+      </button>
+    </div>
+  </div>
+</div>
             </div>
          </div>
         </section>
